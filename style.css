@@ -36,14 +36,40 @@ body{
 }
 .menu-bar ul li{
     padding:10px 30px;
+    position: relative;
 }
 .menu-bar ul li a{
     color:var(--white);
     text-decoration: none;
     font-size: 20px;
 }
-.menu-bar ul li a{
-    color:var(--white);
-    text-decoration: none;
-    font-size: 20px;
+.menu-bar ul li a:hover{
+    color:var(--primary-color);
+}
+.dropdown-menu{
+    display: none;
+}
+.menu-bar ul li:hover .dropdown-menu{
+    display:block;
+    position: absolute;
+    left:0;
+    top:100%;
+    background-color: var(--black);
+}
+.dropdown-menu ul{
+    display: block;
+    margin: 10px;
+}
+.dropdown-menu ul li{
+    width: 150px;
+    padding: 10px;
+}
+.dropdown-arrow{
+    position: absolute;
+    padding-top: 3px;
+}
+.dropdown-arrow2{
+    position: absolute;
+    padding-top: 3px;
+    float: left;
 }
